@@ -453,21 +453,53 @@ footer a {
     text-decoration: none;
     margin: -15px;
 }
-#h5{
-    text-align: left;
-    margin-left: 90px;
-}
-#face img,#insta img{
+#face{
+    background-image: url(../imagenes/facebook1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 70px;
     height: 70px; 
-    border-radius: 50%;
-    margin-left: -110px;
-}
-#face{
-    margin-left: 0px;
+    margin-left: 50px;
     margin-top: 5px;
+    border-radius: 50%;
+}
+#insta{
+    background-image: url(../imagenes/instagram.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px; 
+    margin-right: 899px;
+    margin-top: 5px;
+    mix-blend-mode:difference;
+    border-radius: 50%;
 
 }
+#tiktok{
+    background-image: url(../imagenes/tiktok.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px; 
+    margin-left: 280px;
+    margin-top: -68px;
+    mix-blend-mode:difference;
+    border-radius: 50%;
+
+}
+#what{
+    background-image: url(../imagenes/whatsa.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px; 
+    margin-right: 660px;
+    margin-top: -84px;
+    mix-blend-mode:difference;
+    border-radius: 50%;
+
+}
+
 
 @media only screen and (min-width: 280px) and (max-width: 490px) {
     body {
@@ -646,7 +678,7 @@ footer a {
         margin-top: 50px;
         color: #000000;
         font-size: 25px;
-        margin-left: -30px;
+        margin-left: 30px;
     }
     h4 em{
         color: #19dafa;
@@ -712,9 +744,10 @@ footer a {
     #h1{
         width: 100%;
         margin-top: 20px;
-        font-size: 20px;
+        font-size: 23px;
         color: #000000;
-        margin-left: 20px;
+        text-align: center;
+        margin-left: 15px;
     }
     #h1 em{
         color: #19dafa;
@@ -722,25 +755,19 @@ footer a {
     
     .carousel-item{
         width:100%;
-        margin-left: -60px;
-        
+        align-items: left;
     }
     .carousel-item img {
         width:100%;
         height: 230px;
         object-fit: cover;
+
     }
     #carouselExampleCaptions{
         width: 100%;
+        align-items: center;
 
     
-    }
-    .carousel-control-prev{
-        width: 20px;
-        margin-left: 0px;
-    }
-    .carousel-control-next{
-        width: 20px;
     }
     
     #container4{
@@ -772,58 +799,24 @@ footer a {
         width: 100px;
         height: 100px;
     }
-
-    
-    footer {
-        padding: 20px 0;
-        border-top: 1px solid #ffffff;
-        margin-top: 15px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../imagenes/tiles-4781625_1920.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    
     footer .container {
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
     }
-    
+
     footer .row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        width: 100%;
+        justify-content: center;
     }
-    
-    footer h5 {
-        color:#3DD5FA;
-        font-weight: bold;
 
-    }
-    
     footer ul {
-        list-style: none;
+        margin-left: 0;
+        text-align: center;
+    }
 
-    }
-    
-    footer .li {
-        margin-bottom: 20px;
-    }
-    
-    footer a {
-        color: #ffffff;
-        text-decoration: none;
-        margin: -10px;
-    }
-    #h5{
-        text-align: left;
-        margin-left: 0px;
-    }
-    #face img{
-        width: 30px;
-        height: 30px; 
-        border-radius: 50%;
+    #face, #insta, #tiktok, #what {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
     }
 }
