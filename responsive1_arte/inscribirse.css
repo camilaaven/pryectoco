@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@media only screen and (min-width: 280px) and (max-width: 490px) {
+    body {
+    font-family: "Poppins", sans-serif;
+    color: hsl(244, 4%, 36%);
+    }
+    input,button {
+    font-family: "Poppins", sans-serif;
+    }
+    .login__content,.login__form,.login__inputs {
+    display: grid;
+    }
+    .login__content {
+    position: relative;
+    height: 50%;
+    }
+    .login__img {
+    position: absolute;
+    width:270px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 24px 48px hsla(244, 75%, 36%, 0.45);
+    }
+    .login__form {
+    margin-top: 40px;
+    background-color: hsla(244, 16%, 92%, 0.6);
+    border: 2px solid hsla(244, 16%, 92%, 0.75);
+    row-gap: 1.25rem;
+    backdrop-filter: blur(20px);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 160px;
+    height: 510px;
+    justify-self: center;
+    justify-self: flex-end;
+    row-gap: 2rem;
+    padding: 3rem;
+    border-radius: 1.25rem;
+    border: 2.5px solid hsla(244, 16%, 92%, 0.75);
+    }
+    .login__title {
+    color:  hsl(244, 12%, 12%);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    }
+    .login__title span {
+    color:hsl(244, 75%, 57%);
+    }
+    .login__description {
+    font-size:  0.813rem;
+    }
+    .login__inputs {
+    row-gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    margin-left: -30px;
+    width: 180px;
+    margin-top: -30px;
+    }
+    .login__label {
+    display: block;
+    color: var(--title-color);
+    font-size:  0.813rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    }
+    .login__input {
+    width: 100%;
+    padding: 14px 12px;
+    border-radius: 6px;
+    border: 2px solid hsl(244, 4%, 36%);
+    background-color: hsla(244, 16%, 92%, 0.6);
+    color: hsl(244, 12%, 12%);
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: border 0.4s;
+    }
+    .login__input::placeholder {
+    color: hsl(244, 4%, 36%);
+    }
+    .login__input:focus,
+    .login__input:valid {
+    border: 2px solid  hsl(244, 75%, 57%);
+    }
+    .login__box {
+    position: relative;
+    width: 160px;
+    }
+    .login__box .login__input {
+    padding-right: 36px;
+    }
+    .login__eye {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    margin-left: 180px;
+    top: 0;
+    bottom: 0;
+    margin-top: 12px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    }
+    .login__check {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    }
+    .login__check-input {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid hsl(244, 4%, 36%);
+    background-color: hsla(244, 16%, 92%, 0.2);
+    border-radius: 0.25rem;
+    }
+    .login__check-input:checked {
+    background:  hsl(244, 75%, 57%);
+    }
+    .login__check-input:checked::before {
+    content: "✔";
+    display: block;
+    color: #fff;
+    font-size: 0.75rem;
+    transform: translate(1.5px, -2.5px);
+    }
+    .login__check-label {
+    font-size: 0.813rem;
+    }
+    .login__buttons {
+    display: flex;
+    column-gap: 0.75rem;
+    flex-direction: column;
+    }
+    .login__button {
+    width: 100%;
+    padding: 14px 2rem;
+    border-radius: 6px;
+    background: linear-gradient(180deg,  hsl(244, 75%, 57%), hsl(249, 64%, 47%));
+    color: #fff;
+    font-size: 0.813rem;
+    font-weight: 600;
+    box-shadow: 0 6px 24px hsla(244, 75%, 48%, 0.5);
+    margin-bottom: 1rem;
+    cursor: pointer;
+    }
+    .login__button-ghost {
+    background: hsla(244, 16%, 92%, 0.6);
+    border: 2px solid  hsl(244, 75%, 57%);
+    color:  hsl(244, 75%, 57%);
+    box-shadow: none;
+    text-decoration: none;
+    }
+    .login__forgot {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color:  hsl(244, 75%, 57%);
+    text-decoration: none;
+    margin-left: 16px;
+    }
+    .id{
+        text-decoration: none;
+        color: #fff;
+    }
+    .id2{
+        text-decoration: none;
+        color: hsl(249, 64%, 47%);
+
+    }
+    .login__content {
+        height: 700px;
+    }
+}
+
+
+

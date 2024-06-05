@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Hammersmith+One&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&display=swap');
+@media only screen and (min-width: 280px) and (max-width: 490px) {
+    body{
+        width:100%;
+    }
+    #banner {
+        height: 550px;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../imagenes/tiles-4781625_1920.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+    }
+      
+    .logo {
+        width: 120px;
+        cursor: pointer;
+        margin-left: -21px;
+    }
+    .nav{
+        margin-left: 230px;
+        margin-top: -40px;
+    }
+    .nav-icon{
+        height: 30px;
+        width: 30px;
+        position: relative;
+        z-index: 10;
+    }
+    .nav-icon span{
+        height: 5px;
+        width: 100%;
+        background-color: #009688;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: .3s ease;
+      }
+      .nav-icon span:nth-child(1){
+        top: 25%;
+      }
+      .nav-icon span:nth-child(3){
+        top: 75%;
+      }
+      .nav-icon.active span:nth-child(1){
+        top: 50%;
+        transform: translate(-50%,-50%)
+        rotate(45deg);
+      }
+      .nav-icon.active span:nth-child(2){
+        opacity: 0;
+      }
+      .nav-icon.active span:nth-child(3){
+        top: 50%;
+        transform: translate(-50%,-50%)
+        rotate(-45deg);
+      }
+      .nav-menu {
+        position: absolute;
+        margin-top: 90px;
+        margin-left: -60px;
+        transform: translate(-50%, -50%);
+      }
+      .nav-menu.show {
+          width: 1000px;
+          height: 200px;
+          position: relative;
+          z-index: 1000;
+          padding: 20px;
+          overflow-y: auto;
+
+      }
+      .nav-menu.hide{
+          margin-left: -100px;
+          text-decoration: none;
+      }
+      .t{
+        text-decoration: none;
+        list-style: none;
+        color: #fff;
+      }
+      .t:hover{
+        background: #00968782;
+        letter-spacing: 2px;
+
+      }
+      .active{
+          text-decoration: none;
+          list-style: none;
+          color: #fff;
+      }
+      .active:hover{
+          background: #00968782;
+          letter-spacing: 2px;
+      }
+      .color{
+          text-decoration: none;
+          color: #fff;
+      }
+      .color:hover{
+          background: #009688;
+          letter-spacing: 2px;
+      }
+      .col{
+          text-decoration: none;
+          color: #fff;
+      }
+      .col:hover{
+          background-color: #009688;
+          letter-spacing: 2px;
+      }
+      .colo{
+          text-decoration: none;
+          color: #fff;
+      }
+      .colo:hover{
+          background: #009688;
+          letter-spacing: 2px;
+      }
+    
+      .hide {
+        display: none;
+        margin-left: 0px;
+      }
+    
+      .show {
+        display: block;
+      }
+
+    .content1{
+        width: 100%;
+        position: absolute;
+        margin-top: 200px;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+    }
+    .content1 h1{
+        font-size: 40px;
+        margin-top: 80px;
+    }
+    .content1 p{
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+        text-align: center;
+        font-size: 13px;
+    }
+    button{
+        width: 170px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #009688;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        overflow:hidden;
+    }
+    span{
+        background: #009688;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    button:hover span{
+        width: 100%;
+    }
+    button:hover {
+        border: none;
+    }
+    .e{
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+
+    .content-container {
+        overflow-y: auto;
+        height: 400px; 
+
+    }
+    #contenedorcard{
+        justify-content: space-evenly;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .card-title{
+        font-family: "Hammersmith One", sans-serif;
+        font-size: 20px;
+        color: #000000;
+
+    }
+    .card-body{
+        box-shadow: 0px 0px 10px #dbdee1;
+        color: #84878b;
+        font-size: 13px;
+    }
+    .card-img-top{
+        object-fit: cover;
+        height: 150px;
+    }
+
+
+    footer {
+        padding: 20px 0;
+        border-top: 1px solid #ffffff;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../imagenes/tiles-4781625_1920.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    footer .container {
+        max-width: 1200px;
+        margin: 20;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    footer .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    footer h5 {
+        color:#3DD5FA;
+        font-weight: bold;
+        font-size: 13px;
+
+    }
+
+    
+    footer .li {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+    
+    footer a {
+        
+        color: #ffffff;
+        text-decoration: none;
+        margin: 15px;
+    }
+}

@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Hammersmith+One&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&display=swap');
+
+@media only screen and (min-width: 280px) and (max-width: 490px) {
+    body{
+        width:100%;
+    }
+    #banner {
+        height: 560px;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../imagenes/tiles-4781625_1920.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+    }
+      
+    .logo {
+        width: 120px;
+        cursor: pointer;
+        margin-left: -21px;
+    }
+    .nav{
+        margin-left: 230px;
+        margin-top: -40px;
+    }
+    .nav-icon{
+        height: 30px;
+        width: 30px;
+        position: relative;
+        z-index: 10;
+    }
+    .nav-icon span{
+        height: 5px;
+        width: 100%;
+        background-color: #009688;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: .3s ease;
+      }
+      .nav-icon span:nth-child(1){
+        top: 25%;
+      }
+      .nav-icon span:nth-child(3){
+        top: 75%;
+      }
+      .nav-icon.active span:nth-child(1){
+        top: 50%;
+        transform: translate(-50%,-50%)
+        rotate(45deg);
+      }
+      .nav-icon.active span:nth-child(2){
+        opacity: 0;
+      }
+      .nav-icon.active span:nth-child(3){
+        top: 50%;
+        transform: translate(-50%,-50%)
+        rotate(-45deg);
+      }
+      .nav-menu {
+        position: absolute;
+        margin-top: 90px;
+        margin-left: -60px;
+        transform: translate(-50%, -50%);
+      }
+      .nav-menu.show {
+          width: 1000px;
+          height: 200px;
+          position: relative;
+          z-index: 1000;
+          padding: 20px;
+          overflow-y: auto;
+
+      }
+      .nav-menu.hide{
+          margin-left: -100px;
+          text-decoration: none;
+      }
+      .tx{
+        text-decoration: none;
+        list-style: none;
+        color: #fff;
+      }
+      .tx:hover{
+        background: #00968782;
+        letter-spacing: 2px;
+
+      }
+      .active{
+          text-decoration: none;
+          list-style: none;
+          color: #fff;
+      }
+      .active:hover{
+          background: #00968782;
+          letter-spacing: 2px;
+      }
+      .color{
+          text-decoration: none;
+          color: #fff;
+      }
+      .color:hover{
+          background: #009688;
+          letter-spacing: 2px;
+      }
+      .col{
+          text-decoration: none;
+          color: #fff;
+      }
+      .col:hover{
+          background-color: #009688;
+          letter-spacing: 2px;
+      }
+      .colo{
+          text-decoration: none;
+          color: #fff;
+      }
+      .colo:hover{
+          background: #009688;
+          letter-spacing: 2px;
+      }
+    
+      .hide {
+        display: none;
+        margin-left: 0px;
+      }
+    
+      .show {
+        display: block;
+      }
+
+    .content1{
+        width: 100%;
+        position: absolute;
+        margin-top: 220px;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+    }
+    .content1 h1{
+        font-size: 40px;
+        margin-top: 80px;
+    }
+    .content1 p{
+        margin: 20px auto;
+        font-weight: 200;
+        line-height: 25px;
+        text-align: center;
+        font-size: 13px;
+    }
+    button{
+        width: 170px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 2px solid #009688;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        overflow:hidden;
+    }
+    span{
+        background: #009688;
+        height: 100%;
+        width: 0;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+    button:hover span{
+        width: 100%;
+    }
+    button:hover {
+        border: none;
+    }
+    .e{
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+    .container2 {
+        width: 100%;
+        padding: 10px;
+    }
+    .t{
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 26px;
+        color: #000000;
+    }
+    .t em{
+        color: #19dafa;
+    }
+    #imgline{
+        margin-left: 40%;
+    }
+
+    .container3{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    .container3 .card{
+        border: 2px solid rgba(161, 157, 157, 0.528);
+        box-shadow: 10px 12px 12px#bab7b768;
+        position: relative;
+        max-width: 200px;
+        height: 115px;
+        background-color: #fff;
+        margin: 30px 10px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 202px rgb(0, 0,0,0,5);
+        transition: 0.3s ease-in-out;
+
+    }
+    .container3 .card:hover{
+        height: 320px;
+    }
+
+    .container3 .card .imgBx{
+        position: relative; 
+        width: 160px;
+        height: 160px;
+        margin-top: -70px;
+        z-index: 1;
+        box-shadow: 0 5px 22px rgb(0, 0, 0, 0.5); 
+    }
+    .container3 .card .imgBx img{
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+    .container3 .card .content{
+        position: relative;
+        margin-top: 90px;
+        text-align: center;
+        color: #060115;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+
+
+    }
+    .container3 .card:hover .content{
+        visibility: visible;
+        opacity: 1;
+        margin-top: -40px;
+        transition-delay: 0.3s
+    }
+    #h2{
+        text-align: center;
+        margin-top: 40px;
+        color: #000000;
+        font-size: 14px;
+
+    }
+    #text2{
+        margin-left: 20px;
+        text-align: left;
+        color: #5d5a5a;
+        margin-top: 6px;
+        font-size: 10px;
+    }
+
+    .t2{
+        margin-left: 60px;
+        margin-top: -20px;
+        font-size: 28px;
+        color: #000000;
+    }
+    .t2 em{
+        color: #19dafa;
+    }
+
+
+    footer {
+        padding: 20px 0;
+        border-top: 1px solid #ffffff;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../imagenes/tiles-4781625_1920.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    footer .container {
+        max-width: 1200px;
+        margin: 20;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    footer .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    footer h5 {
+        color:#3DD5FA;
+        font-weight: bold;
+        font-size: 13px;
+
+    }
+
+    
+    footer .li {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+    
+    footer a {
+        
+        color: #ffffff;
+        text-decoration: none;
+        margin: 15px;
+    }
+}
+

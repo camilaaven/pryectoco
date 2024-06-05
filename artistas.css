@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Hammersmith+One&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&display=swap');
+
+body{
+    width: auto;
+    height: auto;
+}
+#banner {
+    height: 530px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../imagenes/tiles-4781625_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    animation-name: parallax;
+    animation-duration: 10s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+}
+
+@keyframes parallax {
+    from {
+        background-position: center top; 
+    }
+    to {
+        background-position: center bottom;
+    }
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+    margin-left: 21px;
+}
+
+.nav {
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav ul {
+    margin-top: 20px;
+    margin-left: 30px;
+    list-style: none;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.t {
+    position: relative; 
+}
+.t::after {
+    content: '';
+    position: absolute; 
+    left: 0; 
+    bottom: -3px; 
+    width: 100%; 
+    height: 2px; 
+    background-color: transparent; 
+    transition: background-color 0.3s; 
+}
+.t:hover::after {
+    background-color: #009688; 
+}
+.t:hover {
+    transform: scale(1.1);
+}
+.active {
+    position: relative; /* Asegúrate de que el enlace tenga una posición relativa para que el pseudo-elemento ::after se posicione correctamente */
+}
+.active::after {
+    content: '';
+    position: absolute; 
+    left: 0; 
+    bottom: -3px; 
+    width: 100%; 
+    height: 2px; 
+    background-color: transparent; 
+    transition: background-color 0.3s; 
+}
+.active:hover::after {
+    background-color: #009688; 
+}
+.active:hover {
+    transform: scale(1.1);
+}
+.color {
+    position: relative; 
+}
+.color::after {
+    content: '';
+    position: absolute; 
+    left: 0; 
+    bottom: -3px; 
+    width: 100%; 
+    height: 2px; 
+    background-color: transparent; 
+    transition: background-color 0.3s; 
+}
+.color:hover::after {
+    background-color: #009688; 
+}
+.color:hover {
+    transform: scale(1.1);
+}
+.col {
+    position: relative; 
+}
+.col::after {
+    content: '';
+    position: absolute; 
+    left: 0; 
+    bottom: -3px; 
+    width: 100%; 
+    height: 2px; 
+    background-color: transparent; 
+    transition: background-color 0.3s; 
+}
+.col:hover::after {
+    background-color: #009688; 
+}
+.col:hover {
+    transform: scale(1.1);
+}
+.colo {
+    position: relative; 
+}
+.colo::after {
+    content: '';
+    position: absolute; 
+    left: 0; 
+    bottom: -3px; 
+    width: 100%; 
+    height: 2px; 
+    background-color: transparent; 
+    transition: background-color 0.3s; 
+}
+.colo:hover::after {
+    background-color: #009688; 
+}
+.colo:hover {
+    transform: scale(1.1);
+}
+
+.content1 {
+    margin-top: 190px;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content1 h1 {
+    font-size: 80px;
+    margin-top: 80px;
+}
+
+.content1 p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+button {
+    width: 170px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.e {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content-container {
+    overflow-y: auto;
+    height: 500px; 
+}
+#contenedorcard{
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.card-title{
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 29px;
+    color: #000000;
+
+}
+.card-body{
+    box-shadow: 0px 0px 10px #dbdee1;
+    color: #84878b;
+}
+.boton1{
+    color: rgb(255, 255, 255);
+    background-color:#3DD5FA;
+    text-shadow: 0px 0px 10px #ffffffac;
+
+}
+.card-img-top{
+    object-fit: cover;
+    height: 200px;
+}
+
+
+footer {
+    border-top: 1px solid #ffffff;
+    margin-top: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../imagenes/tiles-4781625_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+footer .container {
+    margin: 20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+footer h5 {
+    color:#3DD5FA;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 30px;
+
+}
+  
+footer ul {
+    list-style: none;
+    margin-left: 50px;
+
+}
+  
+footer .li {
+    
+    margin-bottom: 30px;
+}
+  
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: -15px;
+}
+#face{
+    background-image: url(../imagenes/facebook1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px; 
+    margin-left: 50px;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+#insta{
+    background-image: url(../imagenes/instagram.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px; 
+    margin-right: 899px;
+    margin-top: 5px;
+    mix-blend-mode:difference;
+    border-radius: 50%;
+
+}
+#tiktok{
+    background-image: url(../imagenes/tiktok.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px; 
+    margin-left: 280px;
+    margin-top: -68px;
+    mix-blend-mode:difference;
+    border-radius: 50%;
+
+}
+#what{
+    background-image: url(../imagenes/whatsa.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px; 
+    margin-right: 660px;
+    margin-top: -84px;
+    mix-blend-mode:difference;
+    border-radius: 50%;
+
+}
+
+@media only screen and (min-width: 280px) and (max-width: 490px) {
+    body {
+        width: auto;
+        height: auto;
+   }
+
+   #banner {
+       width: 100%;
+       height: 459px;
+   }
+   @keyframes parallax {
+       from {
+           background-position: center top; 
+       }
+       to {
+           background-position: center bottom;
+       }
+   }
+
+   .logo {
+       width: 90px;
+       cursor: pointer;
+       margin-top: 10px;
+       margin-left: 1px;
+   }
+   .nav {
+       width: 85%;
+       margin: auto;
+       padding: 10px 0;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+   }
+   
+   .nav-icon {
+       height: 30px;
+       width: 30px;
+       position: relative;
+       z-index: 2;
+       cursor: pointer;
+   }
+   
+   .nav-icon span {
+       height: 5px;
+       width: 100%;
+       background-color: #ffffff;
+       border-radius: 25px;
+       position: absolute;
+       top: 50%;
+       left: 64%;
+       transform: translate(-50%, -50%);
+       transition: 0.3s ease;
+   }
+   
+   .nav-icon span:nth-child(1) {
+       top: 25%;
+   }
+   
+   .nav-icon span:nth-child(3) {
+       top: 75%;
+   }
+   
+   .nav-icon.active span:nth-child(1) {
+       top: 50%;
+       transform: translate(-50%, -50%) rotate(45deg);
+   }
+   
+   .nav-icon.active span:nth-child(2) {
+       opacity: 0;
+   }
+   
+   .nav-icon.active span:nth-child(3) {
+       top: 50%;
+       transform: translate(-50%, -50%) rotate(-45deg);
+   }
+   
+   .nav-menu {
+       position: absolute;
+       top: 1px;
+       right: 13px; /* Inicialmente fuera de la pantalla desde la derecha */
+       width: 150px; 
+       background-color:#185d6e;
+       z-index: 1;
+       transition: right 0.3s ease;
+       padding: 10px;
+       visibility: hidden; 
+   }
+   
+   .nav-menu.show {
+       right: 2px;
+       visibility: visible;
+   }
+   
+   .nav-menu.hide {
+       right: 100px;
+       visibility: hidden;
+   }
+   
+   .t, .active, .color, .col, .colo {
+       margin-left: -13px;
+       position: relative;
+       display: block;
+       padding: 10px;
+       text-decoration: none;
+   }
+   
+   .t:hover::after, .active:hover::after, .color:hover::after, .col:hover::after, .colo:hover::after {
+       background-color: #009688;
+   }
+   
+   .t:hover, .active:hover, .color:hover, .col:hover, .colo:hover {
+       transform: scale(1.1);
+   }
+   .content1 {
+       width: 100%;
+       text-align: center;
+       margin-top: 199px;
+       color: #fff;
+   }
+   
+   .content1 h1 {
+       font-size: 45px;
+   }
+   
+   .content1 p {
+       font-size: 10px;
+       margin-left: -1px;
+       width: 100%;
+       line-height: 1.5; /* Espaciado entre líneas normal */
+       white-space: pre-line; /* Respetar los saltos de línea */
+       max-height: 16em; /* Máximo de cuatro líneas */
+       overflow: hidden; /* Ocultar el exceso de texto */
+   }
+   
+   button {
+       width: 120px; /* Ajuste de ancho */
+       padding: 10px 0; /* Ajuste de padding */
+       text-align: center;
+       margin: 20px 5px; /* Ajuste de márgenes */
+       border-radius: 20px; /* Ajuste de borde */
+       font-weight: bold;
+       border: 2px solid #009688;
+       background: transparent;
+       color: #fff;
+       cursor: pointer;
+       position: relative;
+       overflow: hidden;
+   }
+   button:hover span {
+       width: 100%;
+   }
+   button:hover {
+       border: none;
+   }
+   .e {
+       color: #fff;
+       text-decoration: none;
+   }
+    .content-container {
+        height: auto;
+    }
+
+    .card-img-top {
+        height: 150px;
+        padding: 9px;
+    }
+    #contenedorcard .card {
+        margin-bottom: 20px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .row {
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer ul {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #face, #insta, #tiktok, #what {
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
+}
+
+

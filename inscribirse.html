@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="inscribirse.css">
+    <title>Inscribirse</title>
+</head>
+<body>
+    <div class="container">
+        <div class="login__content">
+            <img src="imagenes/tiles-4781625_1920.jpg" alt="login image" class="login__img">
+            <form action="" class="login__form">
+                <div>
+                    <h1 class="login__title"><span>Bienvenido</span> de nuevo!</h1>
+                    <p class="login__description">Bienvenido digite su correo y contraseña!</p>
+                </div>
+                <div>
+                    <div class="login__inputs">
+                        <div>
+                            <label for="input-email" class="login__label">Correo</label>
+                            <input type="email" placeholder="Digite su correo" 
+                            required class="login__input" id="input-email">
+                        </div>
+                        <div>
+                            <label for="input-pass" class="login__label">Contraseña</label>
+                            <div class="login__box">
+                                <input type="password" placeholder="Digite su contraseña" 
+                                required class="login__input" id="input-pass">
+                                <i class="ri-eye-off-line login__eye" id="input-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login__check">
+                        <input type="checkbox" class="login__check-input" id="input-check">
+                        <label for="input-check" class="login__check-label">Recordar datos</label>
+                    </div>
+                </div>
+                <div>
+                    <div class="login__buttons">
+                        <button class="login__button"><a href="index.html" target="_blank" class="id">Ingresar</a></button>
+                        <button class="login__button login__button-ghost"><a href="registrarse.html" target="_blank" class="id2">Registrarse</a></button>
+                    </div>
+                    <a href="#" class="login__forgot">Olvido la contraseña?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Pago</title>
+</head>
+<body>
+    <div class="container">
+        <div class="containerContent">
+          <h3>Bienvenido!</h3>
+          <h1>Formulario de inscripcion:</h1>
+          <form action="#">
+            <label for="nombre-completo">Nombre Completo:</label>
+            <div class="inputRow">
+              <input type="text" id="nombre-completo" name="nombre-completo" required>
+            </div>
+            <label for="documento">Documento:</label>
+            <div class="inputRow">
+              <input type="text" id="documento" name="documento" required>
+            </div>
+            <label for="correo">Correo Electrónico:</label>
+            <div class="inputRow">
+              <input type="email" id="correo" name="correo" required>
+            </div>
+            <label for="numero">Numero de telefono:</label>
+            <div class="inputRow">
+              <input type="num" id="numero" name="numero" required>
+            </div>
+            <label for="fecha-nacimiento">Fecha en el que desea ir a la exposicion:</label>
+            <div class="inputRow">
+              <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            </div>
+            <label for="metodo-pago">Método de Pago:</label>
+            <div class="inputRow">
+              <select id="metodo-pago" name="metodo-pago" required>
+                <option value="">Seleccione una opción</option>
+                <option value="tarjeta-credito">Tarjeta de Crédito</option>
+                <option value="paypal">PayPal</option>
+                <option value="transferencia-bancaria">Transferencia Bancaria</option>
+              </select>
+            </div>
+            <div class="inputRow1">
+              <input type="submit" value="Inscripcion a la exposicion" class="button">
+            </div>
+          </form>
+        </div>
+        <div class="containerImg">
+          </div>
+        </div>
+  
+
+        <div id="exposition-info" class="exposition-info"></div>
+
+        <div class="calendar-container">
+            <h2>Calendario de Exposiciones de Arte</h2>
+            <select id="month-select">
+              <option value="1">Enero</option>
+              <option value="2">Febrero</option>
+              <option value="3">Marzo</option>
+              <option value="4">Abril</option>
+              <option value="5">Mayo</option>
+              <option value="6">Junio</option>
+              <option value="7">Julio</option>
+              <option value="8">Agosto</option>
+              <option value="9">Septiembre</option>
+              <option value="10">Octubre</option>
+              <option value="11">Noviembre</option>
+              <option value="12">Diciembre</option>
+            </select>
+            <div class="calendar">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Lun</th>
+                    <th>Mar</th>
+                    <th>Mie</th>
+                    <th>Jue</th>
+                    <th>Vie</th>
+                    <th>Sab</th>
+                    <th>Dom</th>
+                  </tr>
+                </thead>
+                <tbody id="calendar-body">
+                  <!-- El calendario se generará aquí -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+      <script src="calendario.js"></script>
+
+</body>
+</html>
